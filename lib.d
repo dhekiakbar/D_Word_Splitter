@@ -64,7 +64,7 @@ string[] findUniqueChar(string[] text)
     int[string] charFrequency;
     string[] uniqueChars;
 
-    // Iterasi setiap string dalam array
+    // Iterate string in array
     for (int i = 0; i < text.length; i++)
     {
         text[i] = toUpper(text[i]);
