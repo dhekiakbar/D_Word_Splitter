@@ -6,7 +6,6 @@ import check_word;
 
 void main()
 {
-    writeln("Program Menghitung jumlah huruf dan karakter");
     write("Input your txt file path = ");
     string filename = readln().strip;
     string content;
@@ -17,13 +16,13 @@ void main()
     catch (Exception e)
     {
         writeln("-------------------------");
-        writeln("Gagal memuat file");
+        writeln("failed to load file");
     }
 
-    string[] split = slice(content); //Memisah kata per kata
+    string[] split = slice(content); //splitting string into an array
     writeln(split);
-    int character = countChar(split);
-    int number = countNum(split);
+    int character = countChar(split); //counting alphabetical char
+    int number = countNum(split); //counting number
     writeln("Character Count = ", character);
     writeln("Word Count = ", split.length);
     writeln("Number Count = ", number);

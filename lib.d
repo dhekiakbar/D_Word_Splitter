@@ -80,8 +80,8 @@ string[] findUniqueChar(string[] text)
     foreach (key, value; charFrequency)
     {
         if (value == 1)
-        { // Jika hanya muncul sekali
-            uniqueChars ~= key; // Tambahkan string ke hasil
+        { // if only appeared once
+            uniqueChars ~= key;
         }
     }
 
